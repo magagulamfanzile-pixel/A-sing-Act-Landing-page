@@ -1,21 +1,9 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Single Act - Giving Hope to Students</title>
-    <script async="" src="https://cdn.sender.net/accounts_resources/universal.js"></script><script>
-        (function (s, e, n, d, er) {
-            s['Sender'] = er;
-            s[er] = s[er] || function () {
-                (s[er].q = s[er].q || []).push(arguments)
-            }, s[er].l = 1 * new Date();
-            var a = e.createElement(n),
-                m = e.getElementsByTagName(n)[0];
-            a.async = 1;
-            a.src = d;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
-        sender('75327975bc3334')
-    </script>
     <style>
         * {
             margin: 0;
@@ -231,489 +219,6 @@
             margin-bottom: 0.5rem;
         }
 
-        #membership {
-            background: #fff;
-        }
-
-        .membership-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            font-size: 1.1rem;
-            color: #555;
-        }
-
-        .membership-tiers {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .tier-card {
-            background: white;
-            border: 3px solid #e0e0e0;
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-            position: relative;
-        }
-
-        .tier-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-
-        .tier-card.recommended {
-            border-color: #FF8C42;
-            border-width: 4px;
-        }
-
-        .tier-badge {
-            background: #FF8C42;
-            color: white;
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .tier-card h3 {
-            color: #4A90E2;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .tier-price {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #FF8C42;
-            margin-bottom: 0.5rem;
-        }
-
-        .tier-period {
-            color: #888;
-            font-size: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .tier-benefits {
-            text-align: left;
-            margin-bottom: 2rem;
-        }
-
-        .tier-benefits li {
-            padding: 0.6rem 0;
-            border-bottom: 1px solid #f0f0f0;
-            color: #555;
-            line-height: 1.5;
-        }
-
-        .tier-benefits li:last-child {
-            border-bottom: none;
-        }
-
-        .tier-benefits li::before {
-            content: "✓ ";
-            color: #52c41a;
-            font-weight: bold;
-            margin-right: 0.5rem;
-        }
-
-        .tier-button {
-            display: inline-block;
-            background: #4A90E2;
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .tier-button:hover {
-            background: #3a7bc8;
-        }
-
-        .tier-card.recommended .tier-button {
-            background: #FF8C42;
-        }
-
-        .tier-card.recommended .tier-button:hover {
-            background: #e67a32;
-        }
-
-        .signup-form-container {
-            max-width: 900px;
-            margin: 4rem auto 0;
-            background: linear-gradient(135deg, #4A90E2 0%, #67B5E8 100%);
-            padding: 3rem 4rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: opacity 0.3s, transform 0.3s;
-        }
-
-        .signup-form-container.hidden {
-            opacity: 0;
-            transform: scale(0.95);
-            pointer-events: none;
-            height: 0;
-            overflow: hidden;
-            padding: 0;
-            margin: 0;
-        }
-
-        .signup-form-container h3 {
-            color: white;
-            text-align: center;
-            margin-bottom: 0.5rem;
-            font-size: 2.2rem;
-            font-weight: bold;
-        }
-
-        .signup-subtitle {
-            color: white;
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-            opacity: 0.95;
-            line-height: 1.5;
-        }
-
-        .sender-form-field {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            min-height: 500px;
-        }
-
-        .sender-form-field > * {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-note {
-            color: white;
-            text-align: center;
-            margin-top: 1.5rem;
-            font-size: 0.95rem;
-            opacity: 0.95;
-            line-height: 1.6;
-        }
-
-        /* This will hide Sender's thank you message when it appears */
-        body.form-submitted .sender-form-field {
-            display: none !important;
-        }
-
-        /* NEW: Payment Methods Button */
-        .payment-methods-button {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .payment-methods-btn {
-            display: inline-block;
-            background: white;
-            color: #4A90E2;
-            padding: 1.2rem 2.5rem;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            border: none;
-            cursor: pointer;
-        }
-
-        .payment-methods-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-            background: #f0f8ff;
-        }
-
-        .payment-methods-btn::before {
-            content: "🙏 ";
-            font-size: 1.3rem;
-        }
-
-        .success-message {
-            display: none;
-            max-width: 700px;
-            margin: 4rem auto 0;
-            background: linear-gradient(135deg, #52c41a 0%, #73d13d 100%);
-            padding: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
-            color: white;
-            animation: slideIn 0.5s ease-out;
-            position: relative;
-            overflow: hidden;
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .success-message::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: shimmer 3s infinite;
-        }
-
-        @keyframes shimmer {
-            0% {
-                transform: translate(-50%, -50%) rotate(0deg);
-            }
-            100% {
-                transform: translate(-50%, -50%) rotate(360deg);
-            }
-        }
-
-        .success-message.show {
-            display: block;
-        }
-
-        .success-message h3 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 1;
-            animation: bounce 1s ease-in-out;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-20px);
-            }
-            60% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .success-message p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 1;
-            animation: fadeInUp 0.8s ease-out forwards;
-            opacity: 0;
-        }
-
-        .success-message p:nth-child(2) {
-            animation-delay: 0.3s;
-        }
-
-        .success-message p:nth-child(3) {
-            animation-delay: 0.5s;
-        }
-
-        .success-message p:nth-child(4) {
-            animation-delay: 0.7s;
-        }
-
-        .success-message p:nth-child(5) {
-            animation-delay: 0.9s;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .success-icon {
-            font-size: 5rem;
-            display: inline-block;
-            animation: scaleUp 0.6s ease-out;
-            margin-bottom: 1rem;
-        }
-
-        @keyframes scaleUp {
-            0% {
-                transform: scale(0);
-                opacity: 0;
-            }
-            50% {
-                transform: scale(1.2);
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        .hearts-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            overflow: hidden;
-        }
-
-        .floating-heart {
-            position: absolute;
-            font-size: 2rem;
-            animation: floatUp 3s ease-out forwards;
-            opacity: 0;
-        }
-
-        @keyframes floatUp {
-            0% {
-                transform: translateY(0) rotate(0deg);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-400px) rotate(360deg);
-                opacity: 0;
-            }
-        }
-
-        .impact-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 0.8rem 1.5rem;
-            border-radius: 50px;
-            margin: 1rem 0.5rem;
-            font-weight: bold;
-            font-size: 1.1rem;
-            animation: pulse 2s infinite;
-            position: relative;
-            z-index: 1;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-        }
-
-        .payment-options {
-            margin-top: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .payment-option-btn {
-            background: white;
-            color: #4A90E2;
-            padding: 1.2rem 1.5rem;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .payment-option-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-            background: #f0f8ff;
-        }
-
-        .payment-option-btn .icon {
-            font-size: 2rem;
-        }
-
-        .payment-details {
-            display: none;
-            background: rgba(255, 255, 255, 0.95);
-            color: #333;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-top: 1rem;
-            text-align: left;
-            animation: expandDown 0.3s ease-out;
-        }
-
-        @keyframes expandDown {
-            from {
-                opacity: 0;
-                max-height: 0;
-            }
-            to {
-                opacity: 1;
-                max-height: 500px;
-            }
-        }
-
-        .payment-details.show {
-            display: block;
-        }
-
-        .payment-details strong {
-            color: #4A90E2;
-            display: block;
-            margin-top: 0.5rem;
-        }
-
-        .recurring-instructions {
-            background: #f9f9f9;
-            padding: 2rem;
-            border-radius: 15px;
-            margin-top: 3rem;
-        }
-
-        .recurring-instructions h3 {
-            color: #4A90E2;
-            margin-bottom: 1rem;
-        }
-
-        .recurring-instructions ol {
-            margin-left: 1.5rem;
-            color: #555;
-            line-height: 2;
-        }
-
-        .recurring-instructions ol li {
-            margin-bottom: 0.5rem;
-        }
-
         #donate {
             background: linear-gradient(135deg, #4A90E2 0%, #67B5E8 100%);
             color: white;
@@ -742,7 +247,7 @@
 
         .donation-methods {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
@@ -773,22 +278,6 @@
 
         .donation-details strong {
             color: #4A90E2;
-        }
-
-        .paypal-button {
-            display: inline-block;
-            background: #0070ba;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            transition: background 0.3s;
-        }
-
-        .paypal-button:hover {
-            background: #005a94;
         }
 
         footer {
@@ -932,7 +421,6 @@
             margin-top: 0.5rem;
         }
 
-        /* MOBILE RESPONSIVE STYLES */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -952,78 +440,20 @@
                 grid-template-columns: 1fr;
             }
 
-            .payment-options {
-                grid-template-columns: 1fr;
-            }
-
             .admin-buttons button {
                 min-width: 100%;
             }
-
-            /* MOBILE: Make form container wider and more mobile-friendly */
-            .signup-form-container {
-                max-width: 95%;
-                padding: 2rem 1rem;
-                margin: 2rem auto 0;
-            }
-
-            .signup-form-container h3 {
-                font-size: 1.8rem;
-            }
-
-            .signup-subtitle {
-                font-size: 1rem;
-            }
-
-            /* Mobile payment button adjustments */
-            .payment-methods-btn {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-                width: 100%;
-                max-width: 100%;
-            }
-
-            /* Success message mobile optimization */
-            .success-message {
-                max-width: 95%;
-                padding: 2rem 1.5rem;
-            }
-
-            .success-message h3 {
-                font-size: 2rem;
-            }
-
-            .success-message p {
-                font-size: 1rem;
-            }
-
-            .impact-badge {
-                font-size: 1rem;
-                padding: 0.6rem 1.2rem;
-            }
-        }
-
-        /* Extra small mobile devices */
-        @media (max-width: 480px) {
-            .signup-form-container {
-                padding: 1.5rem 1rem;
-            }
-
-            .payment-methods-btn {
-                font-size: 0.95rem;
-                padding: 0.9rem 1.5rem;
-            }
         }
     </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/css/intlTelInput.min.css"><style class="iti-stylesheet-sender">.iti__flag{background-image: url("https://cdn.sender.net/system_images/flags.png");}@media(-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi){.iti__flag{background-image:url("https://cdn.sender.net/system_images/flags2x.png");}}ul.iti__country-list{white-space:normal;}.iti .iti__country-list{width: 100%;}.iti .iti__country-list li:not(.iti__divider){margin: 0}.iti .iti__country-list li.iti__divider{margin: 0 0 5px}.iti .iti__country-list li{font-size: 13px; color: #000; line-height: 20px;font-family: Arial, Helvetica, 'Times New Roman', sans-serif; cursor:pointer;} .iti .iti__dial-code{color: #555}.iti__flag-container{width:100%} .iti .iti__selected-flag{width: 48px; padding: 0 6px 0 10px;} .iti .iti__flag-box{margin-right: 10px;}.iti-mobile .iti--container{z-index:999999}.phone-styles-loading .iti__country-list {display: none}</style></head>
+</head>
 <body>
     <header>
         <nav>
             <div class="logo">A Single Act</div>
             <div class="nav-actions">
-                <a href="https://www.facebook.com/profile.php?id=61584866363075" id="facebook-nav-link" class="nav-btn" target="_blank">📘 Facebook</a>
+                <a href="#" id="facebook-nav-link" class="nav-btn" target="_blank">📘 Facebook</a>
                 <a href="javascript:void(0)" class="nav-btn" onclick="shareWebsite()">🔗 Share</a>
-                <a href="#membership" class="nav-btn donate-nav-btn">❤️ Donate</a>
+                <a href="#donate" class="nav-btn donate-nav-btn">❤️ Donate</a>
             </div>
         </nav>
     </header>
@@ -1031,7 +461,7 @@
     <section id="home" class="hero">
         <h1 id="hero-title">A Single Act Can Change a Life</h1>
         <p id="hero-subtitle">Join us in providing school jerseys and shoes to primary students in need. Together, we can give children the dignity and confidence to learn.</p>
-        <a href="#membership" class="cta-button">Donate Now</a>
+        <a href="#donate" class="cta-button">Donate Now</a>
     </section>
 
     <section id="about">
@@ -1081,141 +511,6 @@
         </div>
     </section>
 
-    <section id="membership">
-        <h2 class="section-title">Join Our Community</h2>
-        <p class="membership-intro">
-            Be part of something bigger. Join our community of supporters who believe every child deserves dignity and opportunity. Choose how you'd like to contribute and stay connected with our mission.
-        </p>
-
-        <div class="membership-tiers">
-            <div class="tier-card">
-                <h3>🤝 Community Member</h3>
-                <div class="tier-price">FREE</div>
-                <div class="tier-period">Stay Connected</div>
-                <ul class="tier-benefits">
-                    <li>Bi-weekly email updates</li>
-                    <li>Photos from distributions</li>
-                    <li>Impact stories</li>
-                    <li>Upcoming events announcements</li>
-                </ul>
-                <a href="#signup" class="tier-button">Join Free</a>
-            </div>
-
-            <div class="tier-card recommended">
-                <span class="tier-badge">MOST POPULAR</span>
-                <h3>❤️ Regular Supporter</h3>
-                <div class="tier-price">E20-E50</div>
-                <div class="tier-period">per month</div>
-                <ul class="tier-benefits">
-                    <li>Everything in Free tier</li>
-                    <li>Monthly transparency reports</li>
-                    <li>Thank you recognition in newsletter</li>
-                    <li>See exactly where your money goes</li>
-                    <li>Direct impact calculations</li>
-                    <li>Private Facebook group access</li>
-                </ul>
-                <a href="#signup" class="tier-button">Become a Supporter</a>
-            </div>
-
-            <div class="tier-card">
-                <h3>⭐ Champion</h3>
-                <div class="tier-price">E100+</div>
-                <div class="tier-period">per month</div>
-                <ul class="tier-benefits">
-                    <li>Everything in Regular tier</li>
-                    <li>Named recognition on website</li>
-                    <li>Quarterly video call updates</li>
-                    <li>Help choose which schools to visit</li>
-                    <li>Annual impact certificate</li>
-                    <li>Behind-the-scenes exclusive content</li>
-                    <li>First to know about urgent needs</li>
-                </ul>
-                <a href="#signup" class="tier-button">Become a Champion</a>
-            </div>
-        </div>
-
-        <div class="signup-form-container" id="signup">
-            <h3>💝 Support Our Mission</h3>
-            <p class="signup-subtitle">Join our community of changemakers and help provide school essentials to children in need</p>
-            <div class="sender-form-field" data-sender-form-id="av2kKr"><div style="display: inline-block; position: relative;"><iframe title="Thank you In Advance For Your Consideration!" style="width: 424px; height: 723.406px; border: none; overflow: hidden; max-width: 100%; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px; border-radius: 5px;"></iframe></div></div>
-            <p class="form-note">
-                We respect your privacy. Your information will only be used to send updates about our mission. No spam, ever.
-            </p>
-            
-            <!-- NEW: Payment Methods Button -->
-            <div class="payment-methods-button">
-                <a href="#donate" class="payment-methods-btn">
-                    Thank you for your interest! Please click here to see our payment options
-                </a>
-            </div>
-        </div>
-
-        <div class="success-message" id="successMessage">
-            <div class="hearts-container" id="heartsContainer"></div>
-            <div class="success-icon">🎉</div>
-            <h3>You're Amazing!</h3>
-            <p><strong>Thank you for joining our community of changemakers!</strong></p>
-            <div class="impact-badge">✨ You're Making a Difference</div>
-            <p style="font-size: 1.3rem; margin-top: 1.5rem;"><strong>🎒 Ready to make your first impact?</strong></p>
-            <p>Choose your preferred payment method below:</p>
-            
-            <div class="payment-options">
-                <button class="payment-option-btn" onclick="togglePaymentDetails('mobile')">
-                    <span class="icon">📱</span>
-                    <span>Mobile Money</span>
-                </button>
-                <a href="https://www.paypal.com/ncp/payment/7T53D7CB84HJ2" target="_blank" class="payment-option-btn">
-                    <span class="icon">💳</span>
-                    <span>PayPal / Card</span>
-                </a>
-                <button class="payment-option-btn" onclick="togglePaymentDetails('bank')">
-                    <span class="icon">🏦</span>
-                    <span>Bank Transfer</span>
-                </button>
-            </div>
-
-            <div id="mobile-details" class="payment-details">
-                <h4 style="color: #4A90E2; margin-bottom: 0.5rem;">📱 Mobile Money Details</h4>
-                <strong>Service:</strong> <span id="success-mobile-service">MTN Mobile Money</span><br>
-                <strong>Number:</strong> <span id="success-mobile-number">+268 7612 3456</span><br>
-                <strong>Name:</strong> <span id="success-mobile-name">John Dlamini</span>
-                <p style="margin-top: 1rem; font-style: italic; color: #666;">Set up recurring payments in your mobile money app for automatic monthly donations!</p>
-            </div>
-
-            <div id="bank-details" class="payment-details">
-                <h4 style="color: #4A90E2; margin-bottom: 0.5rem;">🏦 Bank Transfer Details</h4>
-                <strong>Bank:</strong> <span id="success-bank-name">FNB Swaziland</span><br>
-                <strong>Account Name:</strong> <span id="success-account-name">John Dlamini</span><br>
-                <strong>Account Number:</strong> <span id="success-account-number">62812345678</span><br>
-                <strong>Branch Code:</strong> <span id="success-branch-code">280067</span>
-            </div>
-
-            <p style="margin-top: 2rem; font-size: 1rem;">You'll receive a welcome email shortly with all the details. Together, we're giving children the dignity and confidence to learn! ❤️</p>
-        </div>
-
-        <div class="recurring-instructions">
-            <h3>📱 How to Set Up Recurring Donations</h3>
-            <p style="margin-bottom: 1rem; color: #555;">For Regular Supporters and Champions, follow these simple steps to set up automatic monthly donations:</p>
-            <ol>
-                <li><strong>Save our Mobile Money number:</strong> <span id="recurring-mobile-number">+268 7642 5405</span></li>
-                <li><strong>Open your Mobile Money app</strong> (MTN MoMo or Eswatini Mobile)</li>
-                <li><strong>Look for "Scheduled Payments"</strong> or "Recurring Payments"</li>
-                <li><strong>Set up:</strong>
-                    <ul style="margin-top: 0.5rem;">
-                        <li>Amount: E20, E50, or E100 (your choice)</li>
-                        <li>Recipient: A Single Act</li>
-                        <li>Frequency: Monthly</li>
-                        <li>Start Date: Today or 1st of next month</li>
-                    </ul>
-                </li>
-                <li><strong>Confirm and activate</strong> your recurring payment</li>
-            </ol>
-            <p style="margin-top: 1.5rem; color: #555; font-style: italic;">
-                <strong>Alternative:</strong> You can also use our eWallet (<span id="recurring-ewallet">+268 7642 5405</span>) or FNB account for bank transfers. Contact us if you need help setting this up!
-            </p>
-        </div>
-    </section>
-
     <section id="donate">
         <h2 class="section-title">Make a Difference Today</h2>
         <p class="donate-intro">Every contribution helps us provide essentials to students in need. Choose your preferred donation method below:</p>
@@ -1225,16 +520,16 @@
                 <h3>📱 Mobile Money</h3>
                 <div class="donation-details">
                     <strong>Service:</strong> <span id="mobile-service">MTN Mobile Money</span><br>
-                    <strong>Number:</strong> <span id="mobile-number">+268 7642 5405</span><br>
-                    <strong>Name:</strong> <span id="mobile-name">Mfanzile Magagula</span>
+                    <strong>Number:</strong> <span id="mobile-number">+268 7612 3456</span><br>
+                    <strong>Name:</strong> <span id="mobile-name">John Dlamini</span>
                 </div>
             </div>
 
             <div class="donation-card">
                 <h3>💳 eWallet</h3>
                 <div class="donation-details">
-                    <strong>Number:</strong> <span id="ewallet-number">+268 7642 5405</span><br>
-                    <strong>Name:</strong> <span id="ewallet-name">Mfanzile Magagula</span>
+                    <strong>Number:</strong> <span id="ewallet-number">+268 7612 3456</span><br>
+                    <strong>Name:</strong> <span id="ewallet-name">John Dlamini</span>
                 </div>
             </div>
 
@@ -1242,32 +537,22 @@
                 <h3>🏦 Bank Transfer</h3>
                 <div class="donation-details">
                     <strong>Bank:</strong> <span id="bank-name">FNB Swaziland</span><br>
-                    <strong>Account Name:</strong> <span id="account-name">Mfanzile Magagula</span><br>
-                    <strong>Account Number:</strong> <span id="account-number">63186521887</span><br>
-                    <strong>Branch Code:</strong> <span id="branch-code">281064</span>
-                </div>
-            </div>
-
-            <div class="donation-card">
-                <h3>💳 PayPal / Credit Card</h3>
-                <div class="donation-details">
-                    <p style="margin-bottom: 1rem;">Accept payments from anywhere in the world via PayPal or credit/debit card.</p>
-                    <a href="https://www.paypal.com/ncp/payment/7T53D7CB84HJ2" target="_blank" class="paypal-button">
-                        Donate via PayPal
-                    </a>
+                    <strong>Account Name:</strong> <span id="account-name">John Dlamini</span><br>
+                    <strong>Account Number:</strong> <span id="account-number">62812345678</span><br>
+                    <strong>Branch Code:</strong> <span id="branch-code">280067</span>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2024 A Single Act. Making a difference, one student at a time.</p>
+        <p>&copy; 2024 A Single Act. Making a difference, one student at a time.</p>
         <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61584866363075" id="facebook-link" target="_blank">📘 Follow us on Facebook</a>
+            <a href="#" id="facebook-link" target="_blank">📘 Follow us on Facebook</a>
         </div>
     </footer>
 
-    <div class="admin-panel" id="adminPanel" style="display: block;">
+    <div class="admin-panel" id="adminPanel">
         <div class="admin-content">
             <h2>✏️ Edit Your Page</h2>
 
@@ -1337,14 +622,6 @@
             </div>
 
             <div class="admin-section">
-                <h3>Membership Recurring Payment Info</h3>
-                <label>Mobile Money Number (shown in recurring instructions):</label>
-                <input type="text" id="edit-recurring-mobile">
-                <label>eWallet Number:</label>
-                <input type="text" id="edit-recurring-ewallet">
-            </div>
-
-            <div class="admin-section">
                 <h3>Mobile Money Details</h3>
                 <label>Service (e.g., MTN, Vodacom):</label>
                 <input type="text" id="edit-mobile-service">
@@ -1407,82 +684,7 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('adminPanel').style.display = 'none';
-            
-            // Listen for Sender form success
-            window.addEventListener('senderFormSuccess', function(event) {
-                if (event.detail && event.detail.formId === 'av2kKr') {
-                    // Add class to body to hide Sender's thank you message
-                    document.body.classList.add('form-submitted');
-                    
-                    // Hide the form container
-                    document.getElementById('signup').classList.add('hidden');
-                    
-                    // Show our custom success message
-                    document.getElementById('successMessage').classList.add('show');
-                    
-                    // Create floating hearts animation
-                    createFloatingHearts();
-                    
-                    // Sync payment details to success message
-                    syncPaymentDetails();
-                    
-                    // Scroll to success message
-                    setTimeout(function() {
-                        document.getElementById('successMessage').scrollIntoView({ 
-                            behavior: 'smooth', 
-                            block: 'center' 
-                        });
-                    }, 100);
-                }
-            });
         });
-
-        function createFloatingHearts() {
-            const container = document.getElementById('heartsContainer');
-            const hearts = ['❤️', '💖', '💝', '💗', '💓'];
-            
-            for (let i = 0; i < 15; i++) {
-                setTimeout(() => {
-                    const heart = document.createElement('div');
-                    heart.className = 'floating-heart';
-                    heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
-                    heart.style.left = Math.random() * 100 + '%';
-                    heart.style.animationDelay = Math.random() * 0.5 + 's';
-                    heart.style.animationDuration = (Math.random() * 2 + 2) + 's';
-                    container.appendChild(heart);
-                    
-                    setTimeout(() => {
-                        heart.remove();
-                    }, 4000);
-                }, i * 200);
-            }
-        }
-
-        function togglePaymentDetails(type) {
-            const mobileDetails = document.getElementById('mobile-details');
-            const bankDetails = document.getElementById('bank-details');
-            
-            if (type === 'mobile') {
-                mobileDetails.classList.toggle('show');
-                bankDetails.classList.remove('show');
-            } else if (type === 'bank') {
-                bankDetails.classList.toggle('show');
-                mobileDetails.classList.remove('show');
-            }
-        }
-
-        function syncPaymentDetails() {
-            // Sync Mobile Money details
-            document.getElementById('success-mobile-service').textContent = document.getElementById('mobile-service').textContent;
-            document.getElementById('success-mobile-number').textContent = document.getElementById('mobile-number').textContent;
-            document.getElementById('success-mobile-name').textContent = document.getElementById('mobile-name').textContent;
-            
-            // Sync Bank details
-            document.getElementById('success-bank-name').textContent = document.getElementById('bank-name').textContent;
-            document.getElementById('success-account-name').textContent = document.getElementById('account-name').textContent;
-            document.getElementById('success-account-number').textContent = document.getElementById('account-number').textContent;
-            document.getElementById('success-branch-code').textContent = document.getElementById('branch-code').textContent;
-        }
 
         function openAdmin() {
             const password = prompt('Enter admin password:');
@@ -1555,8 +757,6 @@
             document.getElementById('edit-account-number').value = document.getElementById('account-number').textContent;
             document.getElementById('edit-branch-code').value = document.getElementById('branch-code').textContent;
             document.getElementById('edit-facebook').value = document.getElementById('facebook-link').href;
-            document.getElementById('edit-recurring-mobile').value = document.getElementById('recurring-mobile-number').textContent;
-            document.getElementById('edit-recurring-ewallet').value = document.getElementById('recurring-ewallet').textContent;
         }
 
         function saveChanges() {
@@ -1600,8 +800,6 @@
             document.getElementById('branch-code').textContent = document.getElementById('edit-branch-code').value;
             document.getElementById('facebook-link').href = document.getElementById('edit-facebook').value;
             document.getElementById('facebook-nav-link').href = document.getElementById('edit-facebook').value;
-            document.getElementById('recurring-mobile-number').textContent = document.getElementById('edit-recurring-mobile').value;
-            document.getElementById('recurring-ewallet').textContent = document.getElementById('edit-recurring-ewallet').value;
 
             alert('✅ Changes saved! Now click "Download Updated Page" to get the new file.');
         }
@@ -1648,6 +846,5 @@
             });
         });
     </script>
-
-
-<script class="iti-load-utils" async="" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.min.js"></script></body></html>
+</body>
+</html>
